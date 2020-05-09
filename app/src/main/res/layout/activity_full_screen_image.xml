@@ -1,9 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".FullScreenImageActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/cat"
+        android:transitionName="transitioned_cat" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="20sp"
+        android:padding="18dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nisl augue, dignissim ut rhoncus in, tincidunt et enim. Vestibulum vel nulla felis. Maecenas ipsum tortor, tincidunt et aliquam nec, luctus ut velit. Nullam congue quam eget justo fringilla, quis pharetra tortor volutpat. Pellentesque eget dolor at sapien elementum accumsan vitae in turpis. Aliquam iaculis convallis justo ut interdum. Donec fringilla ante at erat sodales eleifend. Maecenas varius non magna sit amet iaculis. Aliquam pellentesque vulputate leo vel sodales."  />
+</LinearLayout>
